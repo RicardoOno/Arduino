@@ -18,9 +18,13 @@ function kxorro(x) {
         var data = JSON.stringify({"action": "erro"});
         xhr.send(data);
         console.log('ERROOO');
-    } else {
+    } else if(x == 2) {
         var data = JSON.stringify({"action": "stop"});
         xhr.send(data);
         console.log('ERROOO');
+    } else if(x == 'song') {
+        var data = JSON.stringify({"action":"song"});
+        xhr.send(data);
+        console.log('MUSICAAA');
     }
 }
